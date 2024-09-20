@@ -7,7 +7,7 @@ const {
 const data = require("./data");
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = 8080;
 
 // Parse JSON bodies
 app.use(express.json());
