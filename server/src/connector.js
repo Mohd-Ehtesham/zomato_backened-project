@@ -5,7 +5,7 @@ const dotenv = require("dotenv").config();
 const createPool = (database) => {
   return mariadb.createPool({
     host: process.env.HOST, // Database host
-    port: process.env.PORT, // Port number for MariaDB
+    port: process.env.DB_PORT, // Port number for MariaDB
     user: process.env.USER, // MariaDB username
     password: process.env.PASSWORD, // MariaDB password
     database: database || undefined, // Optional: specify a database if provided
